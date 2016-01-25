@@ -142,6 +142,7 @@ d3.csv(url, function(error, csv) {
                 values.push({
                     'total': parseInt(d[i].total),
                     'type': d[i].type,
+                    'tache': d[i].tache,
                 });
             }
             values.sort(sortTime);
@@ -172,6 +173,10 @@ d3.csv(url, function(error, csv) {
         .attr('cy', cellSize / 2)
         .attr('r', function(d) {
             return Math.sqrt(d.radius / Math.PI) * cellSize / 2 / Math.sqrt(maxValue / Math.PI);
+        })
+        .append('svg:title')
+        .text(function(d) {
+            return d.tache;
         });
 
 });
