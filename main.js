@@ -68,9 +68,16 @@ var g = svg.selectAll('.day')
         .attr('height', cellSize)
         .attr('transform', function(d) {
             var month_padding = 1.2 * cellSize * 7 * ((month(d) - 1) % (no_months_in_a_row));
-            var x = day(d) * cellSize + month_padding;
+            var wday = day(d) - 1;
+            if (wday === -1) { // Sunday
+                wday = 6;
+            }
+            var x = wday * cellSize + month_padding;
 
             var week_diff = week(d) - week(new Date(year(d), month(d) - 1, 1));
+            if (wday === 6) { // Sunday
+                week_diff = week_diff - 1;
+            }
             var row_level = Math.ceil(month(d) / (no_months_in_a_row));
             if (parseInt(year(d)) === startYear) {
                     row_level = 1;
