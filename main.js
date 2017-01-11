@@ -6,7 +6,7 @@ var no_months_in_a_row = Math.floor(width / (cellSize * 7 + 50));
 var shift_up = cellSize * 3;
 var startMonth = 12;
 var startYear = 2015;
-var endYear = 2016;
+var endYear = 2017;
 var maxValue = 0;
 
 var colorsTasks = {
@@ -16,7 +16,8 @@ var colorsTasks = {
     'plomberie': '#5397D2', // blue
     'peinture': '#79C34B', // green
     'carrelage': '#983A80', // velvet
-    'parquet': '#9C6868' // brown
+    'parquet': '#9C6868', // brown
+    'extérieur': '#01867a' // dark blue
 };
 
 
