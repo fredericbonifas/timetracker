@@ -13,11 +13,12 @@ var colorsTasks = {
     'démolition': '#B1B1B1', // grey
     'cloisons': '#cccccc', // light grey
     'électricité': '#EA8D3D', // orange
-    'plomberie': '#5397D2', // blue
+    'plomberie': '#3f51b5', // dark blue
     'peinture': '#79C34B', // green
     'carrelage': '#983A80', // velvet
     'parquet': '#9C6868', // brown
-    'extérieur': '#01867a' // dark blue
+    'extérieur': '#01867a', // dark green
+    'ventilation': '#00bcd4' // light blue
 };
 
 
