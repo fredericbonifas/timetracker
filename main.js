@@ -16,7 +16,7 @@ var colorsTasks = {
     'plomberie': '#3f51b5', // dark blue
     'peinture': '#79C34B', // green
     'carrelage': '#983A80', // velvet
-    'parquet': '#9C6868', // brown
+    'plancher': '#9C6868', // brown
     'extérieur': '#01867a', // dark green
     'ventilation': '#00bcd4' // light blue
 };
